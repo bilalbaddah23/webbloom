@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WebBloom — Websites for Instagram shops</title>
+<meta name="description" content="WebBloom turns your Instagram shop into a beautiful website. Your photos, your style, your own domain. See a free demo for your page.">
+<meta name="theme-color" content="#0e0c0a">
+<meta property="og:title" content="WebBloom — Websites for Instagram shops">
+<meta property="og:description" content="Your Instagram shop, as a real website. Free demo for your page.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/serif.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<script src="vendor/gsap.min.js" defer></script>
+<script src="vendor/ScrollTrigger.min.js" defer></script>
+<script src="vendor/lenis.min.js" defer></script>
+<script src="main.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="loader" aria-hidden="true"><div class="loader__in"><span class="loader__mark">W</span><span class="loader__num" data-loader-num>0</span></div></div>
+<div class="progress" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"><span></span></div>
+<div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+<canvas class="stars" aria-hidden="true"></canvas>
+
+<header class="nav" data-nav>
+  <a class="nav__logo" href="#top" aria-label="WebBloom home"><span class="mark">W</span>WebBloom</a>
+  <nav class="nav__links" id="menu" aria-label="Main">
+    <a href="#why">Why</a><a href="#features">Features</a><a href="#work">Work</a><a href="#process">How it works</a><a href="#pricing">Price</a><a href="#faq">FAQ</a>
+  </nav>
+  <a class="btn btn--sm" href="#contact" data-magnet>Free demo <span aria-hidden="true">↗</span></a>
+  <button class="nav__burger" type="button" aria-label="Menu" aria-controls="menu" aria-expanded="false"><i></i><i></i></button>
+</header>
+
+<main id="main">
+<section class="hero" id="top">
+  <div class="hero__copy">
+    <p class="eyebrow" data-rise><span class="dot"></span>Websites for Instagram shops</p>
+    <h1 class="display" data-split>Your Instagram shop, as a <em>real website.</em></h1>
+    <p class="lead" data-rise>Your customers see every product clearly, save what they love and order in one tap. Designed exactly the way you want.</p>
+    <div class="hero__cta" data-rise>
+      <a class="btn" href="#contact" data-magnet>Get my free demo <span aria-hidden="true">↗</span></a>
+      <a class="btn btn--ghost" href="#work" data-magnet>See the work</a>
+    </div>
+    <ul class="hero__facts" data-rise>
+      <li><b>Free</b> demo first</li><li><b>Your</b> photos &amp; style</li><li><b>Your own</b> domain</li>
+    </ul>
+  </div>
+  <div class="hero__stage" aria-hidden="true">
+    <div class="device device--laptop" data-depth="0.5"><div class="device__screen"><img src="assets/work/unique-boutique.webp" alt="" width="1200" height="791"></div><div class="device__base"></div></div>
+    <div class="device device--phone" data-depth="1"><div class="device__screen"><img data-scrollshot src="assets/work/mina-m.webp" alt="" width="360" height="755"></div></div>
+    <div class="chip chip--a" data-depth="1.6"><span>✓</span>Order on WhatsApp</div>
+    <div class="chip chip--b" data-depth="1.3"><span>✓</span>Open 24/7</div>
+    <div class="chip chip--c" data-depth="1.9"><span>♥</span>Saved favourites</div>
+  </div>
+  <a class="scrollcue" href="#why" aria-label="Scroll down"><span></span></a>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="marquee__track">
+  <span>Clear product photos</span><i>✦</i><span>WhatsApp orders</span><i>✦</i><span>Search &amp; favourites</span><i>✦</i><span>Your own domain</span><i>✦</i><span>Phone first</span><i>✦</i><span>Fast &amp; secure</span><i>✦</i>
+  <span>Clear product photos</span><i>✦</i><span>WhatsApp orders</span><i>✦</i><span>Search &amp; favourites</span><i>✦</i><span>Your own domain</span><i>✦</i><span>Phone first</span><i>✦</i><span>Fast &amp; secure</span><i>✦</i>
+</div></div>
+
+<section class="story" id="why">
+  <div class="story__pin">
+    <div class="story__copy">
+      <p class="eyebrow">The problem</p>
+      <h2 class="h2" data-story-title>Great products.<br><em>Lost in the feed.</em></h2>
+      <ol class="story__steps">
+        <li data-story-step><b>01</b>Posts get buried. New customers never see your best pieces.</li>
+        <li data-story-step><b>02</b>The same questions, all day: price, sizes, photos.</li>
+        <li data-story-step><b>03</b>You sleep. Your shop stops selling.</li>
+        <li data-story-step class="is-win"><b>→</b>A website fixes all three, and keeps working with your Instagram.</li>
+      </ol>
+    </div>
+    <div class="story__visual" aria-hidden="true">
+      <div class="dm" data-dm><i></i><div><small>New message</small>How much is this one? 🙏</div></div>
+      <div class="dm" data-dm><i></i><div><small>New message</small>Is it still available?</div></div>
+      <div class="dm" data-dm><i></i><div><small>New message</small>Price please??</div></div>
+      <div class="dm" data-dm><i></i><div><small>New message</small>Can I see more photos?</div></div>
+      <div class="dm" data-dm><i></i><div><small>New message</small>Do you deliver?</div></div>
+      <div class="story__site" data-story-site><img src="assets/work/nihans-boutique-m.webp" alt="" width="360" height="755" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="features">
+  <div class="section__head">
+    <p class="eyebrow" data-rise>What you get</p>
+    <h2 class="h2" data-split>Everything a shop needs. <em>Nothing it doesn’t.</em></h2>
+  </div>
+  <div class="bento">
+    <article class="card card--wide" data-spot data-rise>
+      <div class="card__art art-grid"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <h3>Every product, seen clearly</h3><p>Big photos, details and categories in one place, instead of scrolling through old posts.</p>
+    </article>
+    <article class="card" data-spot data-rise>
+      <div class="card__art art-chat"><span>Hello! I’d like to order:</span><span>2 × Linen set · M</span><b>Send ↗</b></div>
+      <h3>Orders in one tap</h3><p>The order arrives ready on WhatsApp or Instagram.</p>
+    </article>
+    <article class="card" data-spot data-rise>
+      <div class="card__art art-search"><span data-type="black dress">&nbsp;</span></div>
+      <h3>Search &amp; favourites</h3><p>Customers find a piece fast and save what they love.</p>
+    </article>
+    <article class="card" data-spot data-rise>
+      <div class="card__art art-phone"><i></i></div>
+      <h3>Made for phones</h3><p>Looks perfect on every screen, phone first.</p>
+    </article>
+    <article class="card" data-spot data-rise>
+      <div class="card__art art-speed"><b data-count="24">0</b><span>/7 open</span></div>
+      <h3>Always open</h3><p>Your shop keeps working while you sleep.</p>
+    </article>
+    <article class="card card--wide" data-spot data-rise>
+      <div class="card__art art-domain"><span>https://</span><b>yourshop</b><span>.com</span><i>🔒</i></div>
+      <h3>Domain, hosting &amp; HTTPS — handled</h3><p>We set up your own domain name, hosting and security. You just share the link.</p>
+    </article>
+  </div>
+</section>
+
+<section class="work" id="work">
+  <div class="work__head">
+    <p class="eyebrow" data-rise>Selected work</p>
+    <h2 class="h2" data-split>Real shops. <em>Real websites.</em></h2>
+    <p class="work__hint" data-rise>Scroll to explore <span aria-hidden="true">→</span></p>
+  </div>
+  <div class="work__rail" data-rail>
+    <a class="shot" href="https://unique-boutique-lb.duckdns.org" target="_blank" rel="noopener"><div class="shot__media"><img src="assets/work/unique-boutique.webp" alt="Unique Boutique website" width="1200" height="791" loading="lazy"><img class="shot__m" src="assets/work/unique-boutique-m.webp" alt="" width="360" height="755" loading="lazy"></div><div class="shot__cap"><h3>Unique Boutique</h3><span>Fashion · Live demo ↗</span></div></a>
+    <a class="shot" href="https://nihans-boutique.duckdns.org" target="_blank" rel="noopener"><div class="shot__media"><img src="assets/work/nihans-boutique.webp" alt="Nihan’s Boutique website" width="1200" height="791" loading="lazy"><img class="shot__m" src="assets/work/nihans-boutique-m.webp" alt="" width="360" height="755" loading="lazy"></div><div class="shot__cap"><h3>Nihan’s Boutique</h3><span>Fashion · Live demo ↗</span></div></a>
+    <a class="shot" href="https://bermuda-lb.duckdns.org" target="_blank" rel="noopener"><div class="shot__media"><img src="assets/work/bermuda.webp" alt="Bermuda.LB website" width="1200" height="791" loading="lazy"><img class="shot__m" src="assets/work/bermuda-m.webp" alt="" width="360" height="755" loading="lazy"></div><div class="shot__cap"><h3>Bermuda.LB</h3><span>Manufacturer · Live demo ↗</span></div></a>
+    <a class="shot" href="https://bu-womenswear.duckdns.org" target="_blank" rel="noopener"><div class="shot__media"><img src="assets/work/bu.webp" alt="B.U website" width="1200" height="791" loading="lazy"><img class="shot__m" src="assets/work/bu-m.webp" alt="" width="360" height="755" loading="lazy"></div><div class="shot__cap"><h3>B.U</h3><span>Womenswear · Live demo ↗</span></div></a>
+    <a class="shot" href="https://mina-boutique.duckdns.org" target="_blank" rel="noopener"><div class="shot__media"><img src="assets/work/mina.webp" alt="Mina website" width="1200" height="791" loading="lazy"><img class="shot__m" src="assets/work/mina-m.webp" alt="" width="360" height="755" loading="lazy"></div><div class="shot__cap"><h3>Mina</h3><span>Fashion · Live demo ↗</span></div></a>
+    <a class="shot" href="https://craftscorner.duckdns.org" target="_blank" rel="noopener"><div class="shot__media"><img src="assets/work/crafts-corner.webp" alt="Crafts Corner website" width="1440" height="1000" loading="lazy"><img class="shot__m" src="assets/work/crafts-corner-m.webp" alt="" width="390" height="844" loading="lazy"></div><div class="shot__cap"><h3>Crafts Corner</h3><span>Handmade · Live demo ↗</span></div></a>
+    <div class="shot shot--cta"><h3>Yours could be next.</h3><a class="btn" href="#contact" data-magnet>Get my free demo ↗</a></div>
+  </div>
+</section>
+
+<section class="section" id="process">
+  <div class="section__head">
+    <p class="eyebrow" data-rise>How it works</p>
+    <h2 class="h2" data-split>Three steps. <em>That’s it.</em></h2>
+  </div>
+  <div class="steps">
+    <div class="steps__line" aria-hidden="true"><i data-line></i></div>
+    <article class="step" data-step><span class="step__n">1</span><h3>Send us your page</h3><p>Just your Instagram link. We use your own photos and your own style.</p></article>
+    <article class="step" data-step><span class="step__n">2</span><h3>We build your demo, free</h3><p>You get a real link to open on your phone. Ask for any change you want.</p></article>
+    <article class="step" data-step><span class="step__n">3</span><h3>You approve, we go live</h3><p>Your own domain, hosting and HTTPS. Then you share the link with your customers.</p></article>
+  </div>
+</section>
+
+<section class="section pricing" id="pricing">
+  <div class="section__head">
+    <p class="eyebrow" data-rise>One simple price</p>
+    <h2 class="h2" data-split>A full website. <em>One small price.</em></h2>
+  </div>
+  <div class="price" data-tilt data-rise>
+    <div class="price__glow" aria-hidden="true"></div>
+    <div class="price__left">
+      <p class="price__tag">Complete website</p>
+      <p class="price__num"><sup>$</sup><b data-count="200">0</b></p>
+      <p class="price__note">You see the demo first. You decide after.</p>
+      <a class="btn" href="#contact" data-magnet>Start with a free demo ↗</a>
+    </div>
+    <ul class="price__list">
+      <li>Designed in your colours and style</li>
+      <li>All your products with photos and details</li>
+      <li>Orders sent to WhatsApp or Instagram</li>
+      <li>Search, categories and saved favourites</li>
+      <li>Your own domain name and hosting for the first year</li>
+      <li>Any changes you want before going live</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="section__head">
+    <p class="eyebrow" data-rise>Questions</p>
+    <h2 class="h2" data-split>Good to <em>know.</em></h2>
+  </div>
+  <div class="faq" data-rise>
+    <details><summary>Do I need to stop using Instagram?</summary><p>No. Keep Instagram for reaching people, and use the website as your shop. You just add the link to your bio.</p></details>
+    <details><summary>What do you need from me?</summary><p>Only your Instagram page. We take the photos and details from there, and you tell us what to change.</p></details>
+    <details><summary>Can I change the design?</summary><p>Yes. Colours, photos, texts and layout are made the way you want before the site goes live.</p></details>
+    <details><summary>How do customers order?</summary><p>They choose their pieces and send the order to your WhatsApp or Instagram in one tap. You confirm and deliver as you do today.</p></details>
+    <details><summary>How long does it take?</summary><p>The demo is usually ready in a couple of days. After you approve it, the site goes live on your own domain.</p></details>
+  </div>
+</section>
+
+<section class="cta" id="contact">
+  <div class="cta__ring" aria-hidden="true"></div>
+  <p class="eyebrow" data-rise>Ready when you are</p>
+  <h2 class="display display--cta" data-split>Let’s build <em>your shop.</em></h2>
+  <p class="lead" data-rise>Send us your Instagram page and we’ll build a free demo for you.</p>
+  <div class="cta__actions" data-rise>
+    <a class="btn btn--xl" data-contact="instagram" href="#" target="_blank" rel="noopener" data-magnet hidden>Message us on Instagram ↗</a>
+    <a class="btn btn--xl" data-contact="whatsapp" href="#" target="_blank" rel="noopener" data-magnet hidden>Chat on WhatsApp ↗</a>
+    <a class="btn btn--xl btn--ghost" data-contact="email" href="mailto:webbloom.lb@gmail.com?subject=Free%20demo%20for%20my%20shop" data-magnet>Email us ↗</a>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <a class="nav__logo" href="#top"><span class="mark">W</span>WebBloom</a>
+  <p>Websites for Instagram shops.</p>
+  <p class="footer__small">© <span data-year>2026</span> WebBloom · Built by Bilal Baddah</p>
+  <a class="footer__top" href="#top" aria-label="Back to top">↑</a>
+</footer>
+</body>
+</html>
